@@ -51,6 +51,18 @@ class ModelAccess {
 
     return this._HandleDBMSMySQL.insert(sqlInsert);
 
+    // Exemplo para converter o timestamp em formato GMT/UTC
+    // let timestamp = 1590349280203;
+    // let dateObject = new Date(timestamp)
+    // console.log(dateObject.toString())
+    // let myDate = dateObject.getDate()
+    // let myMonth = dateObject.getMonth() +1
+    // let myYear = dateObject.getFullYear()
+    // let myHour = dateObject.getHours()
+    // let myMinute = dateObject.getMinutes()
+    // let mySecond = dateObject.getSeconds()
+    // console.log(`${myYear}-${myMonth}-${myDate} ${myHour}:${myMinute}:${mySecond}`)
+
   }
 
 
