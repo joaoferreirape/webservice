@@ -1,8 +1,8 @@
--- mysqldump --user=root -p --add-drop-database --complete-insert --dump-date --events --force --hex-blob --opt --add-drop-table --add-locks --create-options --disable-keys --extended-insert=1 --quick --set-charset --skip-lock-tables --order-by-primary --quote-names --single-transaction --tz-utc --verbose --result-file=dump.sql --databases sidi134projeto2
+-- mysqldump --user=root -p --add-drop-database --complete-insert --dump-date --events --force --hex-blob --opt --add-drop-table --add-locks --create-options --disable-keys --extended-insert=1 --quick --set-charset --skip-lock-tables --order-by-primary --quote-names --single-transaction --tz-utc --verbose --result-file=dump.sql --databases sistdist
 
 -- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: sidi134projeto2
+-- Host: localhost    Database: sistdist
 -- ------------------------------------------------------
 -- Server version	10.3.22-MariaDB-0+deb10u1
 
@@ -18,14 +18,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `sidi134projeto2`
+-- Current Database: `sistdist`
 --
 
-/*!40000 DROP DATABASE IF EXISTS `sidi134projeto2`*/;
+/*!40000 DROP DATABASE IF EXISTS `sistdist`*/;
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `sidi134projeto2` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `sistdist` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 
-USE `sidi134projeto2`;
+USE `sistdist`;
 
 --
 -- Table structure for table `access`
@@ -55,8 +55,15 @@ INSERT INTO `access` (`idaccess`, `timestamp`, `hostname`, `ip`) VALUES (1,'1590
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'sidi134projeto2'
+-- Dumping events for database 'sistdist'
 --
+
+--
+-- Dumping users and grants
+--
+CREATE USER IF NOT EXISTS aula@'%' IDENTIFIED WITH mysql_native_password BY 'aula';
+GRANT ALL PRIVILEGES ON SISTDIST.* TO aula@'%';
+
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;

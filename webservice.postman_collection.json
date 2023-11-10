@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "41373330-2d4f-4635-b2b8-cd7138db96f2",
+		"name": "webservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3184716"
+	},
+	"item": [
+		{
+			"name": "access",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/access",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"access"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "access",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/access",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"access"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
